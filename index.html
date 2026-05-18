@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BantulKopi Academy - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fdfaf7;
+        }
+        .navbar {
+            background-color: rgba(43, 30, 22, 0.95) !important;
+            backdrop-filter: blur(10px);
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            padding: 160px 0;
+        }
+        .text-coffee { color: #6f4e37; }
+        .btn-coffee { 
+            background-color: #6f4e37; 
+            color: white; 
+            border: none;
+        }
+        .btn-coffee:hover { 
+            background-color: #5a3d2b; 
+            color: white; 
+        }
+        .btn-outline-coffee {
+            border: 2px solid #6f4e37;
+            color: #6f4e37;
+            background: transparent;
+        }
+        .btn-outline-coffee:hover {
+            background-color: #6f4e37;
+            color: white;
+        }
+        .menu-card {
+            transition: all 0.3s ease;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .menu-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+        }
+        .menu-img {
+            height: 220px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #2b1e16 !important;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">Bantul<span class="text-warning">Kopi</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-2"><a class="nav-link text-warning" href="signin.html">Sign In</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-warning btn-sm px-4 fw-bold rounded-pill" href="signup.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero text-center">
+        <div class="container">
+            <h1 class="display-2 fw-bold mb-3">Awali Hari dengan Inspirasi</h1>
+            <p class="lead fs-4 mb-5">Seduhan biji kopi pilihan dari petani lokal dan ruang belajar barista profesional.</p>
+            <a href="#packet-les" class="btn btn-warning btn-lg px-5 shadow fw-bold rounded-pill">Lihat Paket Les</a>
+        </div>
+    </section>
+
+    <section class="container my-5 py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-coffee">Kenapa Disini?</h2>
+            <div class="mx-auto bg-warning" style="height: 3px; width: 60px;"></div>
+        </div>
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="p-4 border-end-md">
+                    <div class="mb-3 fs-1 text-coffee">☕</div>
+                    <h5 class="fw-bold">Biji Kopi Segar</h5>
+                    <p class="text-muted">Kami menggunakan roasting mandiri untuk menjaga kualitas aroma dan rasa belajar terbaik.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 border-start border-end class-mobile-fix">
+                    <div class="mb-3 fs-1 text-coffee">🏠</div>
+                    <h5 class="fw-bold">Tempat Nyaman</h5>
+                    <p class="text-muted">Desain interior yang hangat, sangat mendukung fokus belajar praktek pembuatan kopi.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4">
+                    <div class="mb-3 fs-1 text-coffee">🥐</div>
+                    <h5 class="fw-bold">Camilan Lezat</h5>
+                    <p class="text-muted">Berbagai pilihan pastry tradisional untuk mendampingi waktu istirahat kelas barista.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packet-les" class="container my-5 py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-coffee">Packet Les</h2>
+            <div class="mx-auto bg-warning" style="height: 3px; width: 60px;"></div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card menu-card border-0 shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?auto=format&fit=crop&w=500&q=80" class="card-img-top menu-img" alt="Manual Brew V60">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold mb-2">Manual Brew Class</h5>
+                        <p class="small text-muted">Kuasai teknik seduh tangan, pengenalan karakter biji, dan rasio ekstraksi kopi ideal.</p>
+                        <h4 class="text-coffee fw-bold mb-3">Rp 350.000</h4>
+                        <a href="signup.html" class="btn btn-outline-coffee w-100 rounded-pill">Daftar Kelas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card menu-card border-0 shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" class="card-img-top menu-img" alt="Espresso">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold mb-2">Espresso Professional</h5>
+                        <p class="small text-muted">Belajar mengoperasikan mesin komersial, tamping yang konsisten, dan kalibrasi rasa.</p>
+                        <h4 class="text-coffee fw-bold mb-3">Rp 500.000</h4>
+                        <a href="signup.html" class="btn btn-coffee w-100 rounded-pill shadow">Daftar Kelas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card menu-card border-0 shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1541167760496-162955ed8a9f?auto=format&fit=crop&w=500&q=80" class="card-img-top menu-img" alt="Latte Art">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold mb-2">Latte Art Fundamental</h5>
+                        <p class="small text-muted">Teknik frothing susu yang lembut (microfoam) hingga mahir membuat pola dasar free-pour.</p>
+                        <h4 class="text-coffee fw-bold mb-3">Rp 450.000</h4>
+                        <a href="signup.html" class="btn btn-outline-coffee w-100 rounded-pill">Daftar Kelas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-5 border-top">
+        <div class="container text-center">
+            <h2 class="fw-bold text-coffee mb-4">Kata Pendatang</h2>
+            <div class="mx-auto mb-4" style="max-width: 600px;">
+                <p class="lead text-muted">"Tempat paling asik buat nugas dan belajar bikin kopi di Bantul. Mentornya sabar dan informatif banget!"</p>
+                <h6 class="fw-bold text-coffee">- Rian, Mahasiswa & Peserta Kelas Manual Brew</h6>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-light text-center p-5">
+        <div class="container">
+            <h3 class="fw-bold mb-4">Bantul<span class="text-warning">Kopi</span></h3>
+            <p class="opacity-75">Jl. Parangtritis KM 10, Bantul, Yogyakarta</p>
+            <p class="small opacity-50">&copy; 2026 BantulKopi Academy. Crafted for coffee lovers.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
